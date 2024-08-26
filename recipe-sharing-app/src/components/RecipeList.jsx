@@ -8,7 +8,7 @@ const RecipeList = () => {
   return (
     <div>
       <h2>Recipe List</h2>
-      {recipes.map((recipe) => (
+      {filteredRecipes.map((recipe) => (
         <div key={recipe.id}>
           <h3>
             <Link to={`/recipe/${recipe.id}`}>{recipe.title}</Link>

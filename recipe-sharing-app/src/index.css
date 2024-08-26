@@ -3,7 +3,6 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  color: darkslategrey;
 }
 
 input, textarea {
@@ -19,9 +18,16 @@ button {
   color: white;
   border: none;
   cursor: pointer;
-  margin: 1em;
 }
 
 button:hover {
   background-color: #0056b3;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.recipe-list {
+  margin-top: 20px;
 }
