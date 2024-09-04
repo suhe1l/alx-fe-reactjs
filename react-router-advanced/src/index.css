@@ -66,3 +66,40 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.home h1 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+}
+
+.home ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.home nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.home nav ul li {
+  margin-bottom: 10px;
+}
+
+.home nav ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.home nav ul li a:hover {
+  text-decoration: underline;
+}
