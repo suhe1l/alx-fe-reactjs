@@ -23,6 +23,11 @@ function HomePage() {
                     </div>
                 ))}
             </div>
+            <Link to='./add-recipe'>
+                <button className="bg-green-600 text-white py-2 px-4 rounded hover:bg-orange-400 mt-7 mb-7">
+                    Add New Recipe
+                </button>
+            </Link>
         </div>
     );
 }

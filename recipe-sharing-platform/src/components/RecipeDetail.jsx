@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import React from "react";
 import { useParams } from "react-router-dom";
 import recipesData from '../data.json'
+import { useNavigate } from "react-router-dom";
 
 function RecipeDetail() {
   const { id } = useParams(); //get the recipeID from URL
   const [recipe, setRecipe] = useState(null);
+  const navigate = useNavigate(); //Hook to handle navigation
   
   useEffect(() => {
     const selectedRecipe = recipesData.find((recipe) => recipe.id === parseInt(id));
@@ -37,6 +39,12 @@ function RecipeDetail() {
                     ))}
                 </ol>
             </div>
+            <button 
+            className="mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-orange-400" 
+            onClick={()=> navigate(-1)}
+            >
+                Go back
+            </button>
         </div>
     );
 }
