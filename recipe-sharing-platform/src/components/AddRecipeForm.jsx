@@ -31,7 +31,7 @@ function AddRecipeForm() {
 
     return (
         <div className="flex items-center justify-center min-h-screen">
-            <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-8 bg-slate-100 shadow-lg rounded-lg ">
+            <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-8 bg-slate-100 shadow-lg rounded-lg md:text-xl sm:text-sm">
                 <h2 className="text-2xl mb-4">Add New Recipe</h2>
 
                 {/* Title */}
