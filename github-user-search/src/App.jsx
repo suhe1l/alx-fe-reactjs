@@ -5,7 +5,7 @@ import { fetchUserData } from './services/githubService';
 
 function App() {
   return (
-    <div className='App'>
+    <div className="m-10 font-mono text-xl">
       <h1>GitHub User Search</h1>
       <Search />
     </div>
