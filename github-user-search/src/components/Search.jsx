@@ -4,7 +4,7 @@ import { fetchUserData } from '../services/githubService';
 const Search = () => {
   const [username, setUsername] = useState('');
   const [location, setLocation] = useState('');
-  const [repos, setRepos] = useState('');
+  const [minRepos, setMinRepos] = useState('');
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -62,8 +62,8 @@ const Search = () => {
             type="number"
             className="border rounded p-2"
             placeholder="Min. repositories"
-            value={repos}
-            onChange={(e) => setRepos(e.target.value)}
+            value={minRepos}
+            onChange={(e) => setMinRepos(e.target.value)}
           />
         </div>
 
