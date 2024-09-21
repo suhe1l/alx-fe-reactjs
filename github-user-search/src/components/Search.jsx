@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { fetchUserData } from '../services/githubService';
+import { fetchAdvancedUserData } from '../services/githubService';
 
 const Search = () => {
   const [username, setUsername] = useState('');
   const [location, setLocation] = useState('');
-  const [minRepos, setMinRepos] = useState('');
+  const [minRepos, setMinRepos] = useState(''); 
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -19,7 +19,7 @@ const Search = () => {
       const searchQuery = {
         username: username.trim(),
         location: location.trim(),
-        repos: repos.trim(),
+        minRepos: minRepos.trim(), 
       };
       const userData = await fetchAdvancedUserData(searchQuery);
       setUsers(userData.items);
@@ -29,7 +29,6 @@ const Search = () => {
       setLoading(false);
     }
   };
-
 
   return (
     <div>
@@ -62,8 +61,8 @@ const Search = () => {
             type="number"
             className="border rounded p-2"
             placeholder="Min. repositories"
-            value={minRepos}
-            onChange={(e) => setMinRepos(e.target.value)}
+            value={minRepos} // Update to minRepos
+            onChange={(e) => setMinRepos(e.target.value)} // Update to setMinRepos
           />
         </div>
 
